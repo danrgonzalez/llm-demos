@@ -1,0 +1,37 @@
+name: llm-demos
+channels:
+  - default
+  - pytorch
+  - huggingface
+dependencies:
+  - python>3.8
+  - pytorch
+  - transformers
+  #- torchvision
+  #- python-graphviz
+  - jupyter
+  - ipykernel
+  #- scikit-learn
+  - matplotlib
+  - seaborn
+  - numpy
+  - pandas
+  #- psycopg2
+  - pyyaml
+  - pip
+  # - pip:
+  #   - schedule
+  #   - awscli
+  #   - boto3
+  #   - pyarrow
+  #   - awswrangler
+  #   - pytest
+  #   - mlflow
+  #   - tqdm
+  #   - graphviz==0.18
+  #   - torchviz
+  #   - hiddenlayer
+  #   - albumentations
+  #   - opencv-python
+
+
