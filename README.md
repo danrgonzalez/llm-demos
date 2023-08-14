@@ -41,9 +41,20 @@ conda deactivate
 
 ## Docker
 
+Re-start shell (zsh) if Docker command is not working.
+Enable the "Use the Apple Silicon engine" option in Docker Desktop if running in M1 Apple Silicon.
+
 ### Build
 ```
-docker build -t tsc-resnet .
+docker build -t llm-demos:0.0.1 .
+```
+
+### Run
+
+May require docker login
+
+```
+docker run llm-demos:0.0.1
 ```
 
 ### Tests

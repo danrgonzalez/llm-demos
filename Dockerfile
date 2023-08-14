@@ -9,7 +9,8 @@ ADD environment.yml /environment.yml
 RUN conda update -n base conda
 RUN conda env create -f environment.yml && conda clean -a
 
-ADD ./app /app
+ADD ./demo /demo
+#ADD ./app /app
 #ADD ./tests /tests
 #ADD ./notebooks /notebooks
 #ADD ./config /config
@@ -17,7 +18,7 @@ ADD ./app /app
 
 WORKDIR /
 
-#ENTRYPOINT source activate llm-demos && jupyter lab
+ENTRYPOINT source activate llm-demos && jupyter lab
 
 #ENTRYPOINT source activate llm-demos && python test/test.py
 
